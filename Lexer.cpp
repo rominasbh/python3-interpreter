@@ -23,6 +23,7 @@
 
 #include "Lexer.hpp"
 #include <iostream>
+#include <unordered_map>
 
 Lexer::Lexer(const std::string& source) : source(source) {}
 
