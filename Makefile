@@ -7,3 +7,8 @@ mypython:
 # Clean up the compiled binary.
 clean:
 	rm -f mypython
+
+# Remove the trace.log file
+cleanlog:
+	rm -f trace.log
+	

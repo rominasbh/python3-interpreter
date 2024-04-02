@@ -37,6 +37,14 @@ make clean
 
 * This will remove the mypython executable from your directory.
 
+* Additionally, if you wish to delete or reset the trace log file (`trace.log`) created during execution, you can run the following command:
+
+```
+make cleanlog
+
+```
+* This command will delete the existing `trace.log` file and create a new empty one once you run the intrepreter again. Note that `make clean` will not affect the `trace.log` file.
+
 # Architecture Overview
 
 ## Instructions Storage
