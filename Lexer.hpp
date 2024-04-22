@@ -25,11 +25,12 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <stack>
 
 enum class TokenType {
     INTEGER, PLUS, MINUS, MUL, DIV, LPAREN, RPAREN, IDENTIFIER, ASSIGN, END_OF_FILE, UNKNOWN, PRINT,
     SEMICOLON, IF, ELSE, STRING, COMMA, EQUAL, GREATER, LESS, NOT_EQUAL, GREATER_EQUAL, LESS_EQUAL,
-    COLON, TAB
+    COLON, INDENT , DEDENT , NEWLINE
 
 };
 
@@ -49,16 +50,24 @@ private:
     std::vector<Token> tokens;
     size_t start = 0;
     size_t current = 0;
+    // the 2 bellow are for indentations
+    size_t lineStart = 0;
+    std::stack<int> indentStack;
     bool isAtEnd() const;
     char advance();
+    char peek() const;
+    // new
+    char peekNext() const;
+    void addToken(TokenType type, const std::string& text);
+    // void addToken(TokenType type, const std::string& text = "");
     void scanToken();
     void tokenizeNumber();
     void tokenizeIdentifier();
-    char peek() const;
-    void addToken(TokenType type, const std::string& text);
     void tokenizeString();
     void tokenizeEqual();
     void tokenizeNotEqual();
     void tokenizeLess();
     void tokenizeGreater();
+    // new
+    void checkIndentation();
 };

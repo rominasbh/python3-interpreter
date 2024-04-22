@@ -46,4 +46,13 @@ public:
             throw std::runtime_error("Variable '" + name + "' is not defined.");
         }
     }
+    void mergeChanges(const Environment& childEnv) {
+    // Logic to merge variables from childEnv back into this environment.
+        for (const auto& var : childEnv.values) {  // Corrected member name from 'variables' to 'values'
+            this->values[var.first] = var.second;
+        }
+}
+
+
+
 };

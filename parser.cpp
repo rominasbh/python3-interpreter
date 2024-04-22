@@ -41,6 +41,8 @@ AssignStmt::AssignStmt(const std::string& name, std::unique_ptr<Expr> value) : n
 void AssignStmt::execute(Interpreter& interpreter, Environment& env)  {
         int val = value->evaluate(env); // Evaluate the expression with the given environment
         env.define(name, val); // Define or update the variable in the environment
+        //line added for debugging
+        std::cout << "Assigning: " << name << " = " << val << std::endl;
     }
 
 
@@ -56,10 +58,17 @@ void BlockStmt::execute(Interpreter& interpreter, Environment& env)  {
         }
 
         // The blockEnvironment goes out of scope here, along with any variables defined within the block.
+        // Merge changes back to the parent environment (if necessary).
+        env.mergeChanges(blockEnvironment);
+        //line added for scope debugging
+        std::cout << "Exiting block environment, variables preserved in parent environment." << std::endl;
     }
+    
     void IfStmt::execute(Interpreter& interpreter, Environment& env) {
     // Evaluate the condition
     bool conditionValue = condition->evaluate(env);
+    //line added for debugging
+    std::cout << "Condition evaluated to: " << (conditionValue ? "true" : "false") << std::endl;    
     
 
     if (conditionValue) {
@@ -85,6 +94,7 @@ std::unique_ptr<Stmt> Parser::parse() {
         }
     }
     // Return a single BlockStmt containing all statements
+    std::cout << "returned the block from parse " <<std::endl;
     return std::make_unique<BlockStmt>(std::move(statements));
 }
 
@@ -108,7 +118,7 @@ std::unique_ptr<Expr> Parser::parsePrimary() {
     throw std::runtime_error("UnExpected expression.");
 }
 
-std::unique_ptr<Expr> Parser::parseUnary() {
+std::unique_ptr<Expr> Parser::parseUnary() { 
     if (match({TokenType::MINUS})) {
         if (peek().type == TokenType::INTEGER)  {
             int value = -std::stoi(advance().lexeme); // Negate the integer value
@@ -159,33 +169,136 @@ std::unique_ptr<Expr> Parser::parseExpression() {
 }
 
 std::unique_ptr<Stmt> Parser::parseStatement() {
+    //for debugging 
+    std::cout << "Parsing statement, next token: Type - " << peek().lexeme << ", Text - '" << peek().lexeme << "'" << std::endl;
     if (match({TokenType::PRINT})) {
         return parsePrintStatement();
     } else if (match({TokenType::IDENTIFIER})) {
         // Save the identifier token for later use
         Token variableName = previous();
+        //debug
+        std::cout << "Processing assignment for variable: " << variableName.lexeme << std::endl;
         consume(TokenType::ASSIGN, "Expect '=' after variable name.");
         auto value = parseExpression(); // Parse the right-hand side expression 
         return std::make_unique<AssignStmt>(variableName.lexeme, std::move(value));
     }
     else if (match({TokenType::IF})){
-        auto condition = parseExpression();
-        consume(TokenType::COLON, "Expect ':' after if condition.");
-        auto ifBranch = parseStatement();
-        std::unique_ptr<Stmt> elseBranch = nullptr;
-        if (match({TokenType::ELSE})) {
-            consume(TokenType::COLON, "Expect ':' after else.");
-            elseBranch = parseStatement();
-        }      
-        return std::make_unique<IfStmt>(std::move(condition),std::move(ifBranch), std::move(elseBranch));  
+        return parseIfStatement();
     }
+    //     auto condition = parseExpression();
+    //     consume(TokenType::COLON, "Expect ':' after if condition.");
+    //     // auto ifBranch = parseStatement();
+    //     auto ifBranch = parseBlock();  // Parse the entire block as 'if' branch
+    //     std::unique_ptr<Stmt> elseBranch = nullptr;
+
+    //     if (match({TokenType::ELSE})) {
+    //         consume(TokenType::COLON, "Expect ':' after else.");
+    //         // elseBranch = parseStatement();
+    //         elseBranch = parseBlock();  // Parse the entire block as 'else' branch
+    //     }      
+    //     return std::make_unique<IfStmt>(std::move(condition),std::move(ifBranch), std::move(elseBranch));  
+    // }
     throw std::runtime_error("Unexpected token in statement");
     
 }
+std::unique_ptr<Stmt> Parser::parseIfStatement() {
+    auto condition = parseExpression();
+    consume(TokenType::COLON, "Expect ':' after if condition.");
+    auto ifBranch = parseBlock();
+    std::unique_ptr<Stmt> elseBranch = nullptr;
+
+    if (match({TokenType::ELSE})) {
+        consume(TokenType::COLON, "Expect ':' after else.");
+        elseBranch = parseBlock();
+    }
+    return std::make_unique<IfStmt>(std::move(condition), std::move(ifBranch), std::move(elseBranch));
+}
+
+//add this to treat the entire if as a block 
+// std::unique_ptr<Stmt> Parser::parseBlock() {
+//     std::vector<std::unique_ptr<Stmt>> blockStatements;
+//     int blockIndentationLevel = getCurrentIndentationLevel(); 
+
+//     while (!isAtEnd() && getCurrentIndentationLevel() == blockIndentationLevel) {
+//         auto statement = parseStatement();
+//         blockStatements.push_back(std::move(statement));
+//     }
+
+//     return std::make_unique<BlockStmt>(std::move(blockStatements));
+// }
+// std::unique_ptr<Stmt> Parser::parseBlock() {
+//     std::vector<std::unique_ptr<Stmt>> blockStatements;
+
+//     if(match({TokenType::INDENT})){
+
+//         while (!check(TokenType::DEDENT) && !isAtEnd()) {
+//             blockStatements.push_back(parseStatement());
+//         }
+//         consume(TokenType::DEDENT,"Expect indentation level -1 " );
+//     }
+//     // expect(TokenType::INDENT);
+//     // while (!check(TokenType::DEDENT) && !isAtEnd()) {
+//     //     blockStatements.push_back(parseStatement());
+//     // }
+//     // expect(TokenType::DEDENT);
+
+//     return std::make_unique<BlockStmt>(std::move(blockStatements));
+// }
+std::unique_ptr<Stmt> Parser::parseBlock() {
+    std::vector<std::unique_ptr<Stmt>> blockStatements;
+    //debug statement 
+    std::cerr << "start parsing the block" << std::endl;
+    consume(TokenType::INDENT, "Expected indent at the start of a new block.");
+    while (!check(TokenType::DEDENT) && !isAtEnd()) {
+        try {
+            blockStatements.push_back(parseStatement());
+        } catch (const std::runtime_error& e) {
+            std::cerr << "Error parsing statement in block: " << e.what() << std::endl;
+            // Skip to the end of the statement or synchronize
+            synchronize();
+        }
+    }
+    std::cerr << "consuming ddent" << peek().lexeme << std::endl;
+    consume(TokenType::DEDENT, "Expected dedent at the end of the block.");
+
+    return std::make_unique<BlockStmt>(std::move(blockStatements));
+}
+
+void Parser::synchronize() {
+    while (!isAtEnd()) {
+        switch (peek().type) {
+            case TokenType::NEWLINE:
+                advance();  // Consume the newline and check the next token
+                break;
+            case TokenType::INDENT:
+            case TokenType::DEDENT:
+                // Indent and Dedent are significant for block structure
+                return;
+            case TokenType::IF:
+            case TokenType::ELSE:
+                return;
+            // case TokenType::FOR:
+            // case TokenType::WHILE:
+            // case TokenType::DEF:
+            // case TokenType::CLASS:
+            // case TokenType::TRY:
+            //     // These keywords start new blocks or statements
+            //     return;
+            default:
+                advance();  // Continue to skip tokens until reaching a significant one
+                break;
+        }
+    }
+}
+
+
+
 
 std::unique_ptr<Stmt> Parser::parsePrintStatement() {
     consume(TokenType::LPAREN, "Expect '(' after 'print'.");
     std::vector<std::unique_ptr<Expr>> expressions;
+    //line added for debugging
+    std::cout << "Parsing print statement." << std::endl;
 
     if (!check(TokenType::RPAREN)) {
         do {

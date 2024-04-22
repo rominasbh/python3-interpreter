@@ -308,6 +308,8 @@ private:
 
     Token advance() {
         if (!isAtEnd()) return tokens[current++];
+        //this line is for debugging
+        if (current < tokens.size()) std::cout << "Consuming Token: " << tokens[current].lexeme << std::endl;  
         return tokens.back(); // Return the last token if at end (should be EOF token)
     }
 
@@ -330,7 +332,10 @@ private:
     if (check(type)) {
         advance();
     } else {
-        throw std::runtime_error(message);
+        // throw std::runtime_error(message);
+        // this one is for degugging replace with ^ when done debugging
+        error(peek(), message + " instead found token type: " + std::to_string(static_cast<int>(peek().type)));
+        throw std::runtime_error(message + " instead found " + peek().lexeme);
     }
     }
 
@@ -343,6 +348,11 @@ private:
         return tokens.at(current - 1);
     }
  
+    void error(const Token& token, const std::string& message) {
+    std::cerr << "Error at " << token.lexeme << ": " << message << std::endl;
+    // You might want to throw an exception or handle the error based on your application's needs.
+    }
+
 
 public:
     Parser(const std::vector<Token>& tokens) : tokens(tokens), current(0) {}
@@ -351,12 +361,15 @@ public:
     std::unique_ptr<Expr> parseExpression();
     std::unique_ptr<Stmt> parseStatement();
     // Helper methods for parsing different precedence levels of expressions
+    std::unique_ptr<Stmt> parseBlock();
     std::unique_ptr<Expr> parsePrimary();
     std::unique_ptr<Expr> parseUnary();
     std::unique_ptr<Expr> parseFactor();  // Multiplication and Division
     std::unique_ptr<Expr> parseTerm();    // Addition and Subtraction
     std::unique_ptr<Stmt> parsePrintStatement();
     std::unique_ptr<Expr> parseComparison();
+    void synchronize();
+    std::unique_ptr<Stmt> parseIfStatement();
 
 };
 

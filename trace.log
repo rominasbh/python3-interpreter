@@ -1,0 +1,2856 @@
+
+Run at: Mon Apr 22 11:09:48 2024
+File: in01.py
+ResultComparison = 3 
+ResultIf = 5 
+z = 1 
+
+Run at: Mon Apr 22 11:10:21 2024
+File: in02.py
+Error: Variable 'd' is not defined.
+
+Run at: Mon Apr 22 11:22:44 2024
+File: in02.py
+Error: Variable 'd' is not defined.
+
+Run at: Mon Apr 22 11:22:51 2024
+File: in02.py
+Error: Variable 'd' is not defined.
+
+Run at: Mon Apr 22 11:24:51 2024
+File: in02.py
+Error: Variable 'd' is not defined.
+
+Run at: Mon Apr 22 11:26:12 2024
+File: in02.py
+Error: Variable 'd' is not defined.
+
+Run at: Mon Apr 22 11:26:26 2024
+File: in02.py
+Condition evaluated to: false
+Error: Variable 'd' is not defined.
+
+Run at: Mon Apr 22 11:27:25 2024
+File: in01.py
+Condition evaluated to: true
+Condition evaluated to: true
+ResultComparison = 3 
+ResultIf = 5 
+z = 1 
+Exiting block environment.
+
+Run at: Mon Apr 22 11:31:56 2024
+File: in02.py
+Parsing print statement.
+Parsing print statement.
+Assigning: a = 5
+Assigning: b = 10
+Assigning: val = 60
+Assigning: c = 0
+Condition evaluated to: false
+Error: Variable 'd' is not defined.
+
+Run at: Mon Apr 22 12:02:38 2024
+File: in02.py
+Error: Unexpected token in statement
+
+Run at: Mon Apr 22 12:02:47 2024
+File: in01.py
+Error: Unexpected token in statement
+
+Run at: Mon Apr 22 12:16:41 2024
+File: in01.py
+Error: Unexpected token in statement
+
+Run at: Mon Apr 22 12:16:45 2024
+File: in02.py
+Error: Unexpected token in statement
+
+Run at: Mon Apr 22 12:23:23 2024
+File: in02.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 10
+Added token: Type - 7, Text - val
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 2
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - b
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - val
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 40
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - d
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 12
+Added token: Type - 7, Text - tempA
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 6
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - d
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempA
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 33
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - e
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 13
+Added token: Type - 7, Text - tempB
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 23
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - e
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempB
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 80
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - val =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - val
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - c =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - c
+Added token: Type - 6, Text - )
+Error: Unexpected token in statement
+
+Run at: Mon Apr 22 12:33:36 2024
+File: in02.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 10
+Added token: Type - 7, Text - val
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 2
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - b
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - val
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 40
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - d
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 12
+Added token: Type - 7, Text - tempA
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 6
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - d
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempA
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 33
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - e
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 13
+Added token: Type - 7, Text - tempB
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 23
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - e
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempB
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 80
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - val =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - val
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - c =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - c
+Added token: Type - 6, Text - )
+Error: Unexpected token in statement
+
+Run at: Mon Apr 22 12:40:27 2024
+File: in02.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 10
+Added token: Type - 7, Text - val
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 2
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - b
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - val
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 40
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - d
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 12
+Added token: Type - 7, Text - tempA
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 6
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - d
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempA
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 33
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - e
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 13
+Added token: Type - 7, Text - tempB
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 23
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - e
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempB
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 80
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - val =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - val
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - c =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - c
+Added token: Type - 6, Text - )
+Error: Unexpected token in statement
+
+Run at: Mon Apr 22 12:42:29 2024
+File: in02.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 10
+Added token: Type - 7, Text - val
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 2
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - b
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - val
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 40
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - d
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 12
+Added token: Type - 7, Text - tempA
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 6
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - d
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempA
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 33
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - e
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 13
+Added token: Type - 7, Text - tempB
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 23
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - e
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempB
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 80
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - val =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - val
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - c =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - c
+Added token: Type - 6, Text - )
+got to 
+Error: Unexpected token in statement
+
+Run at: Mon Apr 22 12:46:24 2024
+File: in02.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 10
+Added token: Type - 7, Text - val
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 2
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - b
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - val
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 40
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - d
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 12
+Added token: Type - 7, Text - tempA
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 6
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - d
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempA
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 33
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - e
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 13
+Added token: Type - 7, Text - tempB
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 23
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - e
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempB
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 80
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text - 
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - val =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - val
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - c =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - c
+Added token: Type - 6, Text - )
+got to 
+Error: Unexpected token in statement
+
+Run at: Mon Apr 22 12:50:03 2024
+File: ex1/in01.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 2
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - a =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - a
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - b =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - b
+Added token: Type - 6, Text - )
+got to 
+Error: Unexpected token in statement
+
+Run at: Mon Apr 22 13:05:12 2024
+File: ex1/in01.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 2
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - a =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - a
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - b =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - b
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - , Text - ''
+Error: Unexpected token in statement
+
+Run at: Mon Apr 22 13:12:38 2024
+File: ex1/in01.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 2
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - a =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - a
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - b =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - b
+Added token: Type - 6, Text - )
+Added token: Type - 26, Text - 
+
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - b, Text - 'b'
+Processing assignment for variable: b
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - 
+, Text - '
+'
+Error: Unexpected token in statement
+
+Run at: Mon Apr 22 13:15:27 2024
+File: ex1/in01.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 2
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - a =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - a
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - b =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - b
+Added token: Type - 6, Text - )
+Added token: Type - 26, Text - 
+
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - b, Text - 'b'
+Processing assignment for variable: b
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - 
+, Text - '
+'
+Error: Unexpected token in statement
+
+Run at: Mon Apr 22 13:16:26 2024
+File: ex1/in01.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 2
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - a =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - a
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - b =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - b
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - b, Text - 'b'
+Processing assignment for variable: b
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+returned the block from parse 
+Assigning: a = 3
+Assigning: b = 2
+Assigning: a = 1
+a = 1 
+b = 2 
+Exiting block environment.
+
+Run at: Mon Apr 22 13:16:37 2024
+File: in01.py
+Added token: Type - 7, Text - x
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - x
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 2
+Added token: Type - 7, Text - z
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 2
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - resultIf
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 2
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - resultIf
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 4
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - z
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - resultIf
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 2
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - ResultComparison =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - ResultIf =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - resultIf
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - z =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - z
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - x, Text - 'x'
+Processing assignment for variable: x
+Parsing statement, next token: Type - resultComparison, Text - 'resultComparison'
+Processing assignment for variable: resultComparison
+Parsing statement, next token: Type - z, Text - 'z'
+Processing assignment for variable: z
+Parsing statement, next token: Type - if, Text - 'if'
+Parsing statement, next token: Type - resultIf, Text - 'resultIf'
+Processing assignment for variable: resultIf
+Parsing statement, next token: Type - if, Text - 'if'
+Parsing statement, next token: Type - z, Text - 'z'
+Processing assignment for variable: z
+Parsing statement, next token: Type - resultIf, Text - 'resultIf'
+Processing assignment for variable: resultIf
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+returned the block from parse 
+Assigning: x = 5
+Assigning: resultComparison = 3
+Assigning: z = 0
+Condition evaluated to: true
+Assigning: resultIf = 5
+Condition evaluated to: true
+Assigning: z = 1
+Exiting block environment.
+Exiting block environment.
+ResultComparison = 3 
+ResultIf = Error: Variable 'resultIf' is not defined.
+
+Run at: Mon Apr 22 13:26:24 2024
+File: in01.py
+Added token: Type - 7, Text - x
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - x
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 2
+Added token: Type - 7, Text - z
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 2
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - resultIf
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 2
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - resultIf
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 4
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - z
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - resultIf
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 2
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - ResultComparison =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - ResultIf =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - resultIf
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - z =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - z
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - x, Text - 'x'
+Processing assignment for variable: x
+Parsing statement, next token: Type - resultComparison, Text - 'resultComparison'
+Processing assignment for variable: resultComparison
+Parsing statement, next token: Type - z, Text - 'z'
+Processing assignment for variable: z
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - resultIf, Text - 'resultIf'
+Processing assignment for variable: resultIf
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - z, Text - 'z'
+Processing assignment for variable: z
+consuming ddent
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - resultIf, Text - 'resultIf'
+Processing assignment for variable: resultIf
+consuming ddent
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+returned the block from parse 
+Assigning: x = 5
+Assigning: resultComparison = 3
+Assigning: z = 0
+Condition evaluated to: true
+Assigning: resultIf = 5
+Condition evaluated to: true
+Assigning: z = 1
+Exiting block environment.
+Exiting block environment.
+ResultComparison = 3 
+ResultIf = Error: Variable 'resultIf' is not defined.
+
+Run at: Mon Apr 22 13:41:04 2024
+File: in01.py
+Added token: Type - 7, Text - x
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - x
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 2
+Added token: Type - 7, Text - z
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 2
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - resultIf
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 2
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - resultIf
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 4
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - z
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - resultIf
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 2
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - ResultComparison =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - ResultIf =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - resultIf
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - z =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - z
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - x, Text - 'x'
+Processing assignment for variable: x
+Parsing statement, next token: Type - resultComparison, Text - 'resultComparison'
+Processing assignment for variable: resultComparison
+Parsing statement, next token: Type - z, Text - 'z'
+Processing assignment for variable: z
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - resultIf, Text - 'resultIf'
+Processing assignment for variable: resultIf
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - z, Text - 'z'
+Processing assignment for variable: z
+consuming ddent
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - resultIf, Text - 'resultIf'
+Processing assignment for variable: resultIf
+consuming ddent
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+returned the block from parse 
+Assigning: x = 5
+Assigning: resultComparison = 3
+Assigning: z = 0
+Condition evaluated to: true
+Assigning: resultIf = 5
+Condition evaluated to: true
+Assigning: z = 1
+Exiting block environment.
+Exiting block environment.
+ResultComparison = 3 
+ResultIf = Error: Variable 'resultIf' is not defined.
+
+Run at: Mon Apr 22 13:41:16 2024
+File: ex1/in01.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 2
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - a =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - a
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - b =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - b
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - b, Text - 'b'
+Processing assignment for variable: b
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+returned the block from parse 
+Assigning: a = 3
+Assigning: b = 2
+Assigning: a = 1
+a = 1 
+b = 2 
+Exiting block environment.
+
+Run at: Mon Apr 22 13:41:20 2024
+File: in01.py
+Added token: Type - 7, Text - x
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - x
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 2
+Added token: Type - 7, Text - z
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 2
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - resultIf
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 2
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - resultIf
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 4
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - z
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - resultIf
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 2
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - ResultComparison =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - ResultIf =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - resultIf
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - z =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - z
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - x, Text - 'x'
+Processing assignment for variable: x
+Parsing statement, next token: Type - resultComparison, Text - 'resultComparison'
+Processing assignment for variable: resultComparison
+Parsing statement, next token: Type - z, Text - 'z'
+Processing assignment for variable: z
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - resultIf, Text - 'resultIf'
+Processing assignment for variable: resultIf
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - z, Text - 'z'
+Processing assignment for variable: z
+consuming ddent
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - resultIf, Text - 'resultIf'
+Processing assignment for variable: resultIf
+consuming ddent
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+returned the block from parse 
+Assigning: x = 5
+Assigning: resultComparison = 3
+Assigning: z = 0
+Condition evaluated to: true
+Assigning: resultIf = 5
+Condition evaluated to: true
+Assigning: z = 1
+Exiting block environment.
+Exiting block environment.
+ResultComparison = 3 
+ResultIf = Error: Variable 'resultIf' is not defined.
+
+Run at: Mon Apr 22 13:53:04 2024
+File: in01.py
+Added token: Type - 7, Text - x
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - x
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 2
+Added token: Type - 7, Text - z
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 2
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - resultIf
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 2
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - resultIf
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 4
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - z
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - resultIf
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 2
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - ResultComparison =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - resultComparison
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - ResultIf =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - resultIf
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - z =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - z
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - x, Text - 'x'
+Processing assignment for variable: x
+Parsing statement, next token: Type - resultComparison, Text - 'resultComparison'
+Processing assignment for variable: resultComparison
+Parsing statement, next token: Type - z, Text - 'z'
+Processing assignment for variable: z
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - resultIf, Text - 'resultIf'
+Processing assignment for variable: resultIf
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - z, Text - 'z'
+Processing assignment for variable: z
+consuming ddent
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - resultIf, Text - 'resultIf'
+Processing assignment for variable: resultIf
+consuming ddent
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+returned the block from parse 
+Assigning: x = 5
+Assigning: resultComparison = 3
+Assigning: z = 0
+Condition evaluated to: true
+Assigning: resultIf = 5
+Condition evaluated to: true
+Assigning: z = 1
+Exiting block environment, variables preserved in parent environment.
+Exiting block environment, variables preserved in parent environment.
+ResultComparison = 3 
+ResultIf = 5 
+z = 1 
+Exiting block environment, variables preserved in parent environment.
+
+Run at: Mon Apr 22 13:53:48 2024
+File: in02.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 10
+Added token: Type - 7, Text - val
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 2
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - b
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - val
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 40
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - d
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 12
+Added token: Type - 7, Text - tempA
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 6
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - d
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempA
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 33
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - e
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 13
+Added token: Type - 7, Text - tempB
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 23
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - e
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempB
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 80
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - val =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - val
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - c =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - c
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - b, Text - 'b'
+Processing assignment for variable: b
+Parsing statement, next token: Type - val, Text - 'val'
+Processing assignment for variable: val
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - d, Text - 'd'
+Processing assignment for variable: d
+Parsing statement, next token: Type - tempA, Text - 'tempA'
+Processing assignment for variable: tempA
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - e, Text - 'e'
+Processing assignment for variable: e
+Parsing statement, next token: Type - tempB, Text - 'tempB'
+Processing assignment for variable: tempB
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+consuming ddent
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+returned the block from parse 
+Assigning: a = 5
+Assigning: b = 10
+Assigning: val = 60
+Assigning: c = 0
+Condition evaluated to: false
+Assigning: e = 13
+Assigning: tempB = 38
+Condition evaluated to: true
+Assigning: c = 1
+Exiting block environment, variables preserved in parent environment.
+Exiting block environment, variables preserved in parent environment.
+val = 60 
+c = 1 
+Exiting block environment, variables preserved in parent environment.
+
+Run at: Mon Apr 22 13:56:58 2024
+File: in03.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 10
+Added token: Type - 7, Text - val
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 2
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - b
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 3
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 1
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 5
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - a
+Added token: Type - 2, Text - -
+Added token: Type - 7, Text - b
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - val
+Added token: Type - 17, Text - ==
+Added token: Type - 0, Text - 40
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - d
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 12
+Added token: Type - 7, Text - tempA
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 6
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - d
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempA
+Added token: Type - 17, Text - ==
+Added token: Type - 0, Text - 33
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 2
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - e
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 13
+Added token: Type - 7, Text - tempB
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 23
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - e
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempB
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 80
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - val =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - val
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - c =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - c
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - b, Text - 'b'
+Processing assignment for variable: b
+Parsing statement, next token: Type - val, Text - 'val'
+Processing assignment for variable: val
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - d, Text - 'd'
+Processing assignment for variable: d
+Parsing statement, next token: Type - tempA, Text - 'tempA'
+Processing assignment for variable: tempA
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - e, Text - 'e'
+Processing assignment for variable: e
+Parsing statement, next token: Type - tempB, Text - 'tempB'
+Processing assignment for variable: tempB
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+consuming ddent
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+returned the block from parse 
+Assigning: a = 5
+Assigning: b = 10
+Assigning: val = 40
+Assigning: c = 0
+Condition evaluated to: true
+Assigning: d = 12
+Assigning: tempA = -20
+Condition evaluated to: false
+Assigning: c = 2
+Exiting block environment, variables preserved in parent environment.
+Exiting block environment, variables preserved in parent environment.
+val = 40 
+c = 2 
+Exiting block environment, variables preserved in parent environment.
+
+Run at: Mon Apr 22 13:57:15 2024
+File: in04.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 4
+Added token: Type - 7, Text - val
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 3
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 2
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - b
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 3
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - val
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 50
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - d
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 11
+Added token: Type - 7, Text - tempA
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 7
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 2
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - d
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 4
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempA
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 30
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - e
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 14
+Added token: Type - 7, Text - tempB
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 20
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - e
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 6
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 2
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempB
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 75
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 2
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - val =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - val
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - c =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - c
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - b, Text - 'b'
+Processing assignment for variable: b
+Parsing statement, next token: Type - val, Text - 'val'
+Processing assignment for variable: val
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - d, Text - 'd'
+Processing assignment for variable: d
+Parsing statement, next token: Type - tempA, Text - 'tempA'
+Processing assignment for variable: tempA
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - e, Text - 'e'
+Processing assignment for variable: e
+Parsing statement, next token: Type - tempB, Text - 'tempB'
+Processing assignment for variable: tempB
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+consuming ddent
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+returned the block from parse 
+Assigning: a = 5
+Assigning: b = 4
+Assigning: val = 10
+Assigning: c = 0
+Condition evaluated to: false
+Assigning: e = 14
+Assigning: tempB = 38
+Condition evaluated to: false
+Assigning: c = 2
+Exiting block environment, variables preserved in parent environment.
+Exiting block environment, variables preserved in parent environment.
+val = 10 
+c = 2 
+Exiting block environment, variables preserved in parent environment.
+
+Run at: Mon Apr 22 13:57:30 2024
+File: in05.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 10
+Added token: Type - 7, Text - val
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 2
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - b
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - val
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 20
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - d
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 15
+Added token: Type - 7, Text - tempA
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - d
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 3
+Added token: Type - 2, Text - -
+Added token: Type - 7, Text - b
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempA
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 10
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 25, Text - 
+Added token: Type - 7, Text - z
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - d
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 15
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - z
+Added token: Type - 17, Text - ==
+Added token: Type - 0, Text - 30
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - e
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 16
+Added token: Type - 7, Text - tempB
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - e
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 2
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 12
+Added token: Type - 2, Text - -
+Added token: Type - 7, Text - a
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempB
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 50
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 2
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - val =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - val
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - c =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - c
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - y =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - y
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - b, Text - 'b'
+Processing assignment for variable: b
+Parsing statement, next token: Type - val, Text - 'val'
+Processing assignment for variable: val
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - d, Text - 'd'
+Processing assignment for variable: d
+Parsing statement, next token: Type - tempA, Text - 'tempA'
+Processing assignment for variable: tempA
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+Parsing statement, next token: Type - z, Text - 'z'
+Processing assignment for variable: z
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+consuming ddent
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - e, Text - 'e'
+Processing assignment for variable: e
+Parsing statement, next token: Type - tempB, Text - 'tempB'
+Processing assignment for variable: tempB
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+consuming ddent
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+returned the block from parse 
+Assigning: a = 5
+Assigning: b = 10
+Assigning: val = 17
+Assigning: c = 0
+Assigning: y = 0
+Condition evaluated to: true
+Assigning: d = 15
+Assigning: tempA = 20
+Condition evaluated to: true
+Assigning: c = 0
+Exiting block environment, variables preserved in parent environment.
+Assigning: z = 30
+Condition evaluated to: true
+Assigning: y = 1
+Exiting block environment, variables preserved in parent environment.
+Exiting block environment, variables preserved in parent environment.
+val = 17 
+c = 0 
+y = 1 
+Exiting block environment, variables preserved in parent environment.
+
+Run at: Mon Apr 22 13:57:43 2024
+File: in06.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 10
+Added token: Type - 7, Text - val
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 2
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - b
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - val
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 20
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - d
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - tempA
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - d
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 3
+Added token: Type - 2, Text - -
+Added token: Type - 7, Text - b
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempA
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 10
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 25, Text - 
+Added token: Type - 7, Text - z
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - d
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 9
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - z
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 40
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - e
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 16
+Added token: Type - 7, Text - tempB
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - e
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 2
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 12
+Added token: Type - 2, Text - -
+Added token: Type - 7, Text - a
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempB
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 50
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 2
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - val =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - val
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - c =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - c
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - y =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - y
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - b, Text - 'b'
+Processing assignment for variable: b
+Parsing statement, next token: Type - val, Text - 'val'
+Processing assignment for variable: val
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - d, Text - 'd'
+Processing assignment for variable: d
+Parsing statement, next token: Type - tempA, Text - 'tempA'
+Processing assignment for variable: tempA
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+Parsing statement, next token: Type - z, Text - 'z'
+Processing assignment for variable: z
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+consuming ddent
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - e, Text - 'e'
+Processing assignment for variable: e
+Parsing statement, next token: Type - tempB, Text - 'tempB'
+Processing assignment for variable: tempB
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+consuming ddent
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+returned the block from parse 
+Assigning: a = 5
+Assigning: b = 10
+Assigning: val = 17
+Assigning: c = 0
+Assigning: y = 3
+Condition evaluated to: true
+Assigning: d = 5
+Assigning: tempA = 10
+Condition evaluated to: false
+Assigning: c = 3
+Exiting block environment, variables preserved in parent environment.
+Assigning: z = 45
+Condition evaluated to: false
+Assigning: y = 0
+Exiting block environment, variables preserved in parent environment.
+Exiting block environment, variables preserved in parent environment.
+val = 17 
+c = 3 
+y = 0 
+Exiting block environment, variables preserved in parent environment.
+
+Run at: Mon Apr 22 13:57:54 2024
+File: in07.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 8
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 7, Text - val
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 2
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - b
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - val
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 20
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - d
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - tempA
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - d
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 3
+Added token: Type - 2, Text - -
+Added token: Type - 7, Text - b
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempA
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 10
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 25, Text - 
+Added token: Type - 7, Text - z
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - d
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 9
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - z
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 40
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 10
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 11
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - e
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 16
+Added token: Type - 7, Text - tempB
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - e
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 2
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 12
+Added token: Type - 2, Text - -
+Added token: Type - 7, Text - a
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempB
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 50
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 2
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 4
+Added token: Type - 25, Text - 
+Added token: Type - 7, Text - tempC
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - e
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - b
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - tempC
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 20
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - val =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - val
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - c =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - c
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - y =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - y
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - b, Text - 'b'
+Processing assignment for variable: b
+Parsing statement, next token: Type - val, Text - 'val'
+Processing assignment for variable: val
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - d, Text - 'd'
+Processing assignment for variable: d
+Parsing statement, next token: Type - tempA, Text - 'tempA'
+Processing assignment for variable: tempA
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+consuming ddent
+Parsing statement, next token: Type - z, Text - 'z'
+Processing assignment for variable: z
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+consuming ddent
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - e, Text - 'e'
+Processing assignment for variable: e
+Parsing statement, next token: Type - tempB, Text - 'tempB'
+Processing assignment for variable: tempB
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+consuming ddent
+Parsing statement, next token: Type - tempC, Text - 'tempC'
+Processing assignment for variable: tempC
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+consuming ddent
+consuming ddent
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+returned the block from parse 
+Assigning: a = 8
+Assigning: b = 3
+Assigning: val = 16
+Assigning: c = 0
+Assigning: y = 3
+Condition evaluated to: false
+Assigning: e = 16
+Assigning: tempB = 36
+Condition evaluated to: true
+Assigning: y = 2
+Exiting block environment, variables preserved in parent environment.
+Assigning: tempC = 19
+Condition evaluated to: false
+Assigning: y = 5
+Exiting block environment, variables preserved in parent environment.
+Exiting block environment, variables preserved in parent environment.
+val = 16 
+c = 0 
+y = 5 
+Exiting block environment, variables preserved in parent environment.
+
+Run at: Mon Apr 22 13:58:03 2024
+File: in08.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 10
+Added token: Type - 7, Text - def
+Added token: Type - 7, Text - evaluate
+Added token: Type - 5, Text - (
+Added token: Type - 7, Text - x
+Added token: Type - 6, Text - )
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - x
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 3
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - x
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 7
+Added token: Type - 7, Text - d
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - c
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - b
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - result
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - c
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 13
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - result
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 25, Text - 
+Added token: Type - 7, Text - return
+Added token: Type - 7, Text - result
+Added token: Type - 25, Text - 
+Added token: Type - 7, Text - testValue
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 12
+Added token: Type - 7, Text - result
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - evaluate
+Added token: Type - 5, Text - (
+Added token: Type - 7, Text - testValue
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - result =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - result
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - def, Text - 'def'
+Processing assignment for variable: def
+Error at evaluate: Expect '=' after variable name. instead found token type: 7
+Error: Expect '=' after variable name. instead found evaluate
+
+Run at: Mon Apr 22 13:58:39 2024
+File: in10.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 10
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - a
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - b
+Added token: Type - 7, Text - d
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - b
+Added token: Type - 7, Text - x
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - a
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - b
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - a
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - b
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - a
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - b
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - c
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - c
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - d
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - x
+Added token: Type - 22, Text - <=
+Added token: Type - 0, Text - 100
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 4
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 3
+Added token: Type - 7, Text - resA
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 7, Text - resB
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - y
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 10
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 2
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 4
+Added token: Type - 7, Text - resA
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 7, Text - resB
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - y
+Added token: Type - 25, Text - 
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - b
+Added token: Type - 19, Text - <
+Added token: Type - 0, Text - 6
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - t1
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 7, Text - t2
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 8
+Added token: Type - 7, Text - resC
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - t1
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - t2
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - t1
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 12
+Added token: Type - 7, Text - t2
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 9
+Added token: Type - 7, Text - resC
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - t1
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - t2
+Added token: Type - 25, Text - 
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - resA =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - resA
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - resB =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - resB
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - resC =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - resC
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - b, Text - 'b'
+Processing assignment for variable: b
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+Parsing statement, next token: Type - d, Text - 'd'
+Processing assignment for variable: d
+Parsing statement, next token: Type - x, Text - 'x'
+Processing assignment for variable: x
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+Parsing statement, next token: Type - resA, Text - 'resA'
+Processing assignment for variable: resA
+Parsing statement, next token: Type - resB, Text - 'resB'
+Processing assignment for variable: resB
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+Parsing statement, next token: Type - resA, Text - 'resA'
+Processing assignment for variable: resA
+Parsing statement, next token: Type - resB, Text - 'resB'
+Processing assignment for variable: resB
+consuming ddent
+Parsing statement, next token: Type - if, Text - 'if'
+start parsing the block
+Parsing statement, next token: Type - t1, Text - 't1'
+Processing assignment for variable: t1
+Parsing statement, next token: Type - t2, Text - 't2'
+Processing assignment for variable: t2
+Parsing statement, next token: Type - resC, Text - 'resC'
+Processing assignment for variable: resC
+consuming ddent
+start parsing the block
+Parsing statement, next token: Type - t1, Text - 't1'
+Processing assignment for variable: t1
+Parsing statement, next token: Type - t2, Text - 't2'
+Processing assignment for variable: t2
+Parsing statement, next token: Type - resC, Text - 'resC'
+Processing assignment for variable: resC
+consuming ddent
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+Parsing statement, next token: Type - print, Text - 'print'
+Parsing print statement.
+returned the block from parse 
+Assigning: a = 10
+Assigning: b = 5
+Assigning: c = 15
+Assigning: d = 50
+Assigning: x = 880
+Condition evaluated to: false
+Assigning: y = 16
+Assigning: resA = 0
+Assigning: resB = 16
+Exiting block environment, variables preserved in parent environment.
+Condition evaluated to: true
+Assigning: t1 = 3
+Assigning: t2 = 8
+Assigning: resC = 11
+Exiting block environment, variables preserved in parent environment.
+resA = 0 
+resB = 16 
+resC = 11 
+Exiting block environment, variables preserved in parent environment.
+
+Run at: Mon Apr 22 13:59:17 2024
+File: in10.py
+Added token: Type - 7, Text - a
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 10
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 16
+Added token: Type - 7, Text - x
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 7, Text - y
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 9
+Added token: Type - 7, Text - z
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - a
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 1, Text - +
+Added token: Type - 7, Text - b
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - x
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - y
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 30
+Added token: Type - 7, Text - def
+Added token: Type - 7, Text - evaluate
+Added token: Type - 5, Text - (
+Added token: Type - 7, Text - x
+Added token: Type - 6, Text - )
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - b
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - x
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 2
+Added token: Type - 7, Text - c
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - x
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 4
+Added token: Type - 7, Text - d
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - c
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - b
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 7, Text - result
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - c
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 13
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - result
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - result
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 6
+Added token: Type - 25, Text - 
+Added token: Type - 7, Text - return
+Added token: Type - 7, Text - result
+Added token: Type - 25, Text - 
+Added token: Type - 7, Text - def
+Added token: Type - 7, Text - increment
+Added token: Type - 5, Text - (
+Added token: Type - 7, Text - x
+Added token: Type - 6, Text - )
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - scale
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 0
+Added token: Type - 7, Text - val
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - x
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 7
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 5
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 4
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 2
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - val
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 45
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - e
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 1
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 3
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 6
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 5
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 7
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 3
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - e
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 7
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - scale
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 2
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - scale
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 4
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - e
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 8
+Added token: Type - 3, Text - *
+Added token: Type - 0, Text - 3
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 6
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 5
+Added token: Type - 1, Text - +
+Added token: Type - 0, Text - 7
+Added token: Type - 2, Text - -
+Added token: Type - 0, Text - 11
+Added token: Type - 13, Text - if
+Added token: Type - 7, Text - e
+Added token: Type - 18, Text - >
+Added token: Type - 0, Text - 23
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - scale
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 3
+Added token: Type - 25, Text - 
+Added token: Type - 14, Text - else
+Added token: Type - 23, Text - :
+Added token: Type - 24, Text -     
+Added token: Type - 7, Text - scale
+Added token: Type - 8, Text - =
+Added token: Type - 0, Text - 5
+Added token: Type - 25, Text - 
+Added token: Type - 25, Text - 
+Added token: Type - 7, Text - x
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - x
+Added token: Type - 3, Text - *
+Added token: Type - 7, Text - scale
+Added token: Type - 7, Text - return
+Added token: Type - 7, Text - x
+Added token: Type - 25, Text - 
+Added token: Type - 7, Text - z
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - evaluate
+Added token: Type - 5, Text - (
+Added token: Type - 7, Text - x
+Added token: Type - 6, Text - )
+Added token: Type - 7, Text - result
+Added token: Type - 8, Text - =
+Added token: Type - 7, Text - increment
+Added token: Type - 5, Text - (
+Added token: Type - 7, Text - y
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - z =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - z
+Added token: Type - 6, Text - )
+Added token: Type - 11, Text - print
+Added token: Type - 5, Text - (
+Added token: Type - 15, Text - result =
+Added token: Type - 16, Text - ,
+Added token: Type - 7, Text - result
+Added token: Type - 6, Text - )
+Parsing statement, next token: Type - a, Text - 'a'
+Processing assignment for variable: a
+Parsing statement, next token: Type - b, Text - 'b'
+Processing assignment for variable: b
+Parsing statement, next token: Type - x, Text - 'x'
+Processing assignment for variable: x
+Parsing statement, next token: Type - y, Text - 'y'
+Processing assignment for variable: y
+Parsing statement, next token: Type - z, Text - 'z'
+Processing assignment for variable: z
+Parsing statement, next token: Type - c, Text - 'c'
+Processing assignment for variable: c
+Parsing statement, next token: Type - def, Text - 'def'
+Processing assignment for variable: def
+Error at evaluate: Expect '=' after variable name. instead found token type: 7
+Error: Expect '=' after variable name. instead found evaluate
