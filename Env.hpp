@@ -53,6 +53,13 @@ public:
         }
 }
 
+    // Extend the Environment class to handle scoping correctly
+    void Environment::beginScope() {
+        // Push a new scope for local variables
+    }
 
+    void Environment::endScope() {
+        // Pop the current scope, discarding local variables
+    }
 
 };

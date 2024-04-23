@@ -46,4 +46,9 @@ void Interpreter::executeBlock(const std::vector<std::unique_ptr<Stmt>>& stateme
     }
 }
 
-
+int Interpreter::callFunction(const FunctionStmt& function, std::vector<int> arguments) {
+    Environment localEnvironment(&globalEnvironment);
+    // Assign arguments to parameters in localEnvironment
+    // Execute the function body using localEnvironment
+    // Return the result of the function
+}

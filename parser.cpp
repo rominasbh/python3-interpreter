@@ -311,5 +311,9 @@ std::unique_ptr<Stmt> Parser::parsePrintStatement() {
     return std::make_unique<PrintStmt>(std::move(expressions));
 }
 
-
+std::unique_ptr<Stmt> Psrser::parseFunctionDefinition() {
+    // Parse the function name, parameters
+    // Parse the function body as a block statement
+    // Return a function definition statement
+}
 

@@ -192,6 +192,8 @@ void Lexer::tokenizeIdentifier() {
         {"print", TokenType::PRINT},
         {"if", TokenType::IF},
         {"else", TokenType::ELSE},
+        {"def", TokenType::DEF},
+        {"return", TokenType::RETURN},
     
     };
 

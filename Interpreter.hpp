@@ -68,5 +68,5 @@ public:
      */   
     void executeBlock(const std::vector<std::unique_ptr<Stmt>>& statements, Environment& environment);
     
-     
+    int callFunction(const FunctionStmt& function, std::vector<int> arguments);
 };

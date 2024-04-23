@@ -370,6 +370,7 @@ public:
     std::unique_ptr<Expr> parseComparison();
     void synchronize();
     std::unique_ptr<Stmt> parseIfStatement();
+    std::unique_ptr<Stmt> parseFunctionDefinition()
 
 };
 
