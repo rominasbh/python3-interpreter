@@ -41,7 +41,6 @@ class Interpreter;
 class Expr;
 class Stmt;
 
-
 class ASTNode {
 public:
     enum NodeType {
@@ -239,6 +238,31 @@ public:
     }
 };
 
+class CallExpr : public Expr {
+    std::string functionName;
+    std::vector<std::unique_ptr<Expr>> arguments;
+    Interpreter& interpreter;
+
+public:
+    CallExpr(const std::string& functionName, std::vector<std::unique_ptr<Expr>> arguments, Interpreter& interpreter)
+        : functionName(functionName), arguments(std::move(arguments)), interpreter(interpreter) {}
+   
+    virtual int evaluate(Environment& env) override;
+    virtual void execute(Interpreter& interpreter, Environment& env) override;
+
+    // Utility to convert argument expressions to their evaluated results
+    std::vector<int> convertArgumentsToValues(const std::vector<std::unique_ptr<Expr>>& args, Environment& env) {
+        std::vector<int> result;
+        for (const auto& arg : args) {
+            result.push_back(arg->evaluate(env));
+        }
+        return result;
+    }
+};
+
+
+
+
 class IfStmt : public Stmt {
 public:
     std::unique_ptr<Expr> condition;
@@ -277,9 +301,43 @@ public:
     }
 
 };
+class ExpressionStmt : public Stmt {
+    std::unique_ptr<Expr> expression;
 
+public:
+    ExpressionStmt(std::unique_ptr<Expr> expr) : expression(std::move(expr)) {}
 
+    virtual void execute(Interpreter& interpreter, Environment& env) override {
+        expression->evaluate(env);  // The return value can be ignored if not needed
+    }
+};
 
+class ReturnStmt : public Stmt {
+    std::unique_ptr<Expr> returnValue;
+public:
+    ReturnStmt(std::unique_ptr<Expr> returnValue) : returnValue(std::move(returnValue)) {}
+    void execute(Interpreter& interpreter, Environment& env) override;
+};
+
+class FunctionStmt : public Stmt {
+private:
+    std::string name;  // Function name
+    std::vector<std::string> parameters;  // List of parameter names
+    std::unique_ptr<Stmt> body;  // The body of the function
+
+public:
+    // Constructor
+    FunctionStmt(const std::string& name, std::vector<std::string> parameters, std::unique_ptr<Stmt> body)
+        : name(name), parameters(std::move(parameters)), body(std::move(body)) {}
+
+    // Execute function in interpreter context
+    virtual void execute(Interpreter& interpreter, Environment& env) override;
+
+    // Getters for the function's components
+    const std::string& getName() const { return name; }
+    const std::vector<std::string>& getParameters() const { return parameters; }
+    const std::unique_ptr<Stmt>& getBody() const { return body; }
+};
 
 
 class BlockStmt : public Stmt {
@@ -299,6 +357,7 @@ class Parser {
 private:
     std::vector<Token> tokens;
     size_t current = 0;
+    Interpreter& interpreter;
 
     // Utility methods...
 
@@ -355,7 +414,10 @@ private:
 
 
 public:
-    Parser(const std::vector<Token>& tokens) : tokens(tokens), current(0) {}
+    // Parser(const std::vector<Token>& tokens) : tokens(tokens), current(0) {}
+    Parser(const std::vector<Token>& tokens, Interpreter& interpreter)
+        : tokens(tokens), current(0), interpreter(interpreter) {}
+
 
     std::unique_ptr<Stmt> parse();
     std::unique_ptr<Expr> parseExpression();
@@ -370,7 +432,9 @@ public:
     std::unique_ptr<Expr> parseComparison();
     void synchronize();
     std::unique_ptr<Stmt> parseIfStatement();
-    std::unique_ptr<Stmt> parseFunctionDefinition()
+    std::unique_ptr<Stmt> parseFunctionDefinition();
+    std::unique_ptr<Stmt> parseReturnStatement();
+    std::unique_ptr<Expr> parseFunctionCall(const std::string& functionName);
 
 };
 

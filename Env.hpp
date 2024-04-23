@@ -1,15 +1,16 @@
 #pragma once
 #include <unordered_map>
 #include <string>
+#include <memory>
 
-
+class FunctionStmt;
 
 /**
  * A simple environment for variable storage. Supports nested scopes through parent pointers.
  */
 class Environment {
     std::unordered_map<std::string, int> values; // Stores variable names and their values.
-
+    std::unordered_map<std::string, std::shared_ptr<FunctionStmt>> functions;  // Function storage
     Environment* parent; // Pointer to parent environment, nullptr for global scope
 
 
@@ -53,13 +54,17 @@ public:
         }
 }
 
-    // Extend the Environment class to handle scoping correctly
-    void Environment::beginScope() {
-        // Push a new scope for local variables
-    }
+    // // Extend the Environment class to handle scoping correctly
+    // void beginScope() {
+    //     // Push a new scope for local variables
+    // }
 
-    void Environment::endScope() {
-        // Pop the current scope, discarding local variables
-    }
+    // void endScope() {
+    //     // Pop the current scope, discarding local variables
+    // }
+
+    void defineFunction(const std::string& name, std::shared_ptr<FunctionStmt> function);
+    std::shared_ptr<FunctionStmt> getFunction(const std::string& name);
+
 
 };

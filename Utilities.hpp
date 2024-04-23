@@ -39,6 +39,13 @@
 
 #if __cplusplus < 201402L
 
+#include <exception>
+
+struct ReturnValue {
+    int value;
+    explicit ReturnValue(int value) : value(value) {}
+};
+
 namespace std {
     template<typename T, typename... Args>
     unique_ptr<T> make_unique(Args&&... args) {

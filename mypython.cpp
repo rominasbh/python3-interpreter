@@ -85,9 +85,11 @@ int main(int argc, char* argv[]) {
         // Tokenize the source code
         Lexer lexer(source);
         auto tokens = lexer.tokenize();
+        // Interpret the AST
+        Interpreter interpreter;
 
         // Parse the tokens into an AST
-        Parser parser(tokens);
+        Parser parser(tokens,interpreter);
         auto ast = parser.parse(); 
 
         // Ensure parsing resulted in an AST node
@@ -96,8 +98,8 @@ int main(int argc, char* argv[]) {
             return 1;
         }
 
-        // Interpret the AST
-        Interpreter interpreter;
+        // // Interpret the AST
+        // Interpreter interpreter;
         interpreter.interpret(std::move(ast)); 
         } catch (const std::exception& e) {
             std::cerr << "Error: " << e.what() << std::endl;
