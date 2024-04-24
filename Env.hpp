@@ -2,7 +2,7 @@
 #include <unordered_map>
 #include <string>
 #include <memory>
-
+#include <iostream>
 class FunctionStmt;
 
 /**
@@ -38,15 +38,28 @@ public:
      * @return The value of the variable.
      * @throws std::runtime_error If the variable is not defined in the environment or any parent environment.
      */
+    // int get(const std::string& name) {
+    //     if (values.count(name)) {
+    //         return values[name];
+    //     } else if (parent != nullptr) {
+    //         return parent->get(name);
+    //     } else {
+    //         throw std::runtime_error("Variable '" + name + "' is not defined.");
+    //     }
+        
+    // }
     int get(const std::string& name) {
-        if (values.count(name)) {
-            return values[name];
-        } else if (parent != nullptr) {
-            return parent->get(name);
-        } else {
-            throw std::runtime_error("Variable '" + name + "' is not defined.");
-        }
+    if (values.count(name)) {
+        std::cout << "Found variable " << name << " in current environment with value " << values[name] << std::endl;
+        return values[name];
+    } else if (parent != nullptr) {
+        std::cout << "Variable " << name << " not found in current environment, searching in parent." << std::endl;
+        return parent->get(name);
+    } else {
+        throw std::runtime_error("Variable '" + name + "' is not defined.");
     }
+}
+
     void mergeChanges(const Environment& childEnv) {
     // Logic to merge variables from childEnv back into this environment.
         for (const auto& var : childEnv.values) {  // Corrected member name from 'variables' to 'values'

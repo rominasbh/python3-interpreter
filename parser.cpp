@@ -98,7 +98,7 @@ void FunctionStmt::execute(Interpreter& interpreter, Environment& env) {
 int CallExpr::evaluate(Environment& env) {
         // Assuming the interpreter or a runtime mechanism can resolve function names and execute them
         std::vector<int> argValues = convertArgumentsToValues(arguments, env);
-        return interpreter.callFunction(functionName, argValues);
+        return interpreter.callFunction(functionName, argValues,env);
     }
 
 void CallExpr::execute(Interpreter& interpreter, Environment& env) {
