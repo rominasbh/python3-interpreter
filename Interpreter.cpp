@@ -25,7 +25,6 @@
 
 int Interpreter::evaluateExpr(const std::unique_ptr<Expr>& expr, Environment& env) {
     // Directly call the evaluate method on the expression, passing the current environment.
-    // This removes the need for explicit dynamic casting and handling each expression type here.
     return expr->evaluate(env);
 }
 
@@ -50,49 +49,7 @@ void Interpreter::executeBlock(const std::vector<std::unique_ptr<Stmt>>& stateme
     }
 }
 
-// int Interpreter::callFunction(const FunctionStmt& function, std::vector<int> arguments) {
-//     Environment localEnvironment(&globalEnvironment);
-//     // Assign arguments to parameters in localEnvironment
 
-//     try {
-//         function.body()->execute(*this, localEnvironment);
-//     } catch (const ReturnValue& returnValue) {
-//         return returnValue.value; // Catch the return value and pass it back
-//     }
-
-//     return 0; // Default return if no value is returned by the function
-// }
-
-// int Interpreter::callFunction(const std::string& name, const std::vector<int>& arguments) {
-//     // Retrieve the function statement from the environment
-//     auto functionStmt = globalEnvironment.getFunction(name);
-//     if (!functionStmt) {
-//         throw std::runtime_error("Function '" + name + "' is not defined.");
-//     }
-
-//     // Create a new environment for this function call, with the current environment as its parent
-//     Environment localEnvironment(&globalEnvironment);
-
-//     // Check if the number of provided arguments matches the number of parameters
-//     const auto& parameters = functionStmt->getParameters();
-//     if (arguments.size() != parameters.size()) {
-//         throw std::runtime_error("Incorrect number of arguments provided to function '" + name + "'.");
-//     }
-
-//     // Map the passed arguments to the function's parameters in the new local environment
-//     for (size_t i = 0; i < arguments.size(); i++) {
-//         localEnvironment.define(parameters[i], arguments[i]);
-//     }
-
-//     // Execute the function body in the new environment
-//     try {
-//         functionStmt->getBody()->execute(*this, localEnvironment);
-//     } catch (const ReturnValue& returnValue) {
-//         return returnValue.value; // Catch the ReturnValue and pass it back as the function's return value
-//     }
-
-//     return 0; // Default return if no value is explicitly returned by the function
-// }
 
 int Interpreter::callFunction(const std::string& name, const std::vector<int>& arguments, Environment& currentEnv) {
     auto functionStmt = currentEnv.getFunction(name);
@@ -100,7 +57,7 @@ int Interpreter::callFunction(const std::string& name, const std::vector<int>& a
         throw std::runtime_error("Function '" + name + "' is not defined.");
     }
 
-    // Correctly initialize the local environment with currentEnv as the parent
+    // initialize the local environment with currentEnv as the parent
     Environment localEnvironment(&currentEnv);
 
     const auto& parameters = functionStmt->getParameters();

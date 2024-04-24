@@ -49,8 +49,6 @@ Lexer::Lexer(const std::string& source) : source(source) {
 
     void Lexer::addToken(TokenType type, const std::string& text) {
         tokens.push_back(Token(type, text));
-        // Debugging statement
-        std::cout << "Added token: Type - " << static_cast<int>(type) << ", Text - " << text << std::endl;
     }
 
     bool Lexer::isAtEnd() const {
@@ -99,34 +97,6 @@ Lexer::Lexer(const std::string& source) : source(source) {
     }
 }
 
-// void Lexer::checkIndentation() {
-//     if (isAtEnd()) {
-//         // addToken(TokenType::NEWLINE, "\n");
-//         return; } // Return early if at end of source to avoid processing beyond the content.
-
-//     int currentIndentation = 0;
-//     while (isspace(peek()) && peek() != '\n') {
-//         if (peek() == '\t') {
-//             // Assuming a tab is equivalent to four spaces (customize this based on your language specification)
-//             currentIndentation += 4;
-//         } else {
-//             currentIndentation += 1;
-//         }
-//         advance();
-//     }
-
-//     int currentIndent = indentStack.top();
-//     if (currentIndentation > currentIndent) {
-//         indentStack.push(currentIndentation);
-//         addToken(TokenType::INDENT,"indent");
-//     } else if (currentIndentation < currentIndent) {
-//         // Emit DEDENT tokens for each level of indentation that has ended.
-//         while (!indentStack.empty() && indentStack.top() > currentIndentation) {
-//             indentStack.pop();
-//             addToken(TokenType::DEDENT,"dedent");
-//         }
-//     }
-// }
 
 void Lexer::checkIndentation() {
     if (isAtEnd()) {

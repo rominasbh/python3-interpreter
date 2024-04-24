@@ -70,7 +70,7 @@ public:
      */   
     void executeBlock(const std::vector<std::unique_ptr<Stmt>>& statements, Environment& environment);
     
-    // int callFunction(const FunctionStmt& function, std::vector<int> arguments);
+
     int callFunction(const std::string& name, const std::vector<int>& arguments,Environment& currentEnv);
     void executeFunction(const std::unique_ptr<Stmt>& functionStmt, Environment& env);
     void defineFunction(const std::string& name, std::shared_ptr<FunctionStmt> functionStmt);

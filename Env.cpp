@@ -15,10 +15,3 @@ std::shared_ptr<FunctionStmt> Environment::getFunction(const std::string& name) 
     throw std::runtime_error("Function '" + name + "' is not defined.");
 }
 
-// if (functions.count(name)) {
-//             return functions[name];
-//         } else if (parent != nullptr) {
-//             return parent->getFunction(name);
-//         }
-//         throw std::runtime_error("Function '" + name + "' is not defined.");
-//     }

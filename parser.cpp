@@ -42,8 +42,7 @@ AssignStmt::AssignStmt(const std::string& name, std::unique_ptr<Expr> value) : n
 void AssignStmt::execute(Interpreter& interpreter, Environment& env)  {
         int val = value->evaluate(env); // Evaluate the expression with the given environment
         env.define(name, val); // Define or update the variable in the environment
-        //line added for debugging
-        std::cout << "Assigning: " << name << " = " << val << std::endl;
+        
     }
 
 
@@ -59,17 +58,14 @@ void BlockStmt::execute(Interpreter& interpreter, Environment& env)  {
         }
 
         // The blockEnvironment goes out of scope here, along with any variables defined within the block.
-        // Merge changes back to the parent environment (if necessary).
+        // Merge changes back to the parent environment
         env.mergeChanges(blockEnvironment);
-        //line added for scope debugging
-        std::cout << "Exiting block environment, variables preserved in parent environment." << std::endl;
+      
     }
     
     void IfStmt::execute(Interpreter& interpreter, Environment& env) {
     // Evaluate the condition
-    bool conditionValue = condition->evaluate(env);
-    //line added for debugging
-    std::cout << "Condition evaluated to: " << (conditionValue ? "true" : "false") << std::endl;    
+    bool conditionValue = condition->evaluate(env);  
     
 
     if (conditionValue) {
@@ -84,26 +80,24 @@ void BlockStmt::execute(Interpreter& interpreter, Environment& env)  {
 }
 
 void ReturnStmt::execute(Interpreter& interpreter, Environment& env) {
-    int value = returnValue ? interpreter.evaluateExpr(returnValue, env) : 0; // Assume returning 0 if no expression
-    throw ReturnValue(value); // Use a custom exception or control structure to pass return values
+    int value = returnValue ? interpreter.evaluateExpr(returnValue, env) : 0; // returning 0 if no expression
+    throw ReturnValue(value); // pass return values
 }
 
 // Execute function in interpreter context
 void FunctionStmt::execute(Interpreter& interpreter, Environment& env) {
-    // This captures the current function statement as a shared_ptr to store in the environment
+    //captures the current function statement as a shared_ptr to store in the environment
     auto self = std::shared_ptr<FunctionStmt>(this, [](FunctionStmt*) {});
     interpreter.defineFunction(name, self);
 
 }
 int CallExpr::evaluate(Environment& env) {
-        // Assuming the interpreter or a runtime mechanism can resolve function names and execute them
         std::vector<int> argValues = convertArgumentsToValues(arguments, env);
         return interpreter.callFunction(functionName, argValues,env);
     }
 
 void CallExpr::execute(Interpreter& interpreter, Environment& env) {
-        // For an expression, execute might typically just evaluate and discard the result,
-        // unless you're planning to use the result for side effects or further operations.
+
         evaluate(env);
     }
 
@@ -119,7 +113,6 @@ std::unique_ptr<Stmt> Parser::parse() {
         }
     }
     // Return a single BlockStmt containing all statements
-    std::cout << "returned the block from parse " <<std::endl;
     return std::make_unique<BlockStmt>(std::move(statements));
 }
 
@@ -152,7 +145,6 @@ std::unique_ptr<Expr> Parser::parsePrimary() {
         return expr;
     }
 
-    // Handle more primary expressions as needed...
     throw std::runtime_error("UnExpected expression.");
 }
 
@@ -207,32 +199,14 @@ std::unique_ptr<Expr> Parser::parseExpression() {
 }
 
 std::unique_ptr<Stmt> Parser::parseStatement() {
-    //for debugging 
-    std::cout << "Parsing statement, next token: Type - " << peek().lexeme << ", Text - '" << peek().lexeme << "'" << std::endl;
     if (match({TokenType::PRINT})) {
         return parsePrintStatement();
     } else if (match({TokenType::IDENTIFIER})) {
         // Save the identifier token for later use
         Token variableName = previous();
-        //debug
-        std::cout << "Processing assignment for variable: " << variableName.lexeme << std::endl;
         consume(TokenType::ASSIGN, "Expect '=' after variable name.");
         auto value = parseExpression(); // Parse the right-hand side expression 
         return std::make_unique<AssignStmt>(variableName.lexeme, std::move(value));
-        // Check the next token to determine if this is an assignment or a function call
-        // if (match({TokenType::LPAREN})) {
-        //     // It's a function call
-        //     std::cout << "Processing function call for: " << variableName.lexeme << std::endl;
-        //     auto callExpr = parseFunctionCall(variableName.lexeme);
-        //     return std::make_unique<ExpressionStmt>(std::move(callExpr));
-        // } else if (match({TokenType::ASSIGN})) {
-        //     // It's an assignment
-        //     std::cout << "Processing assignment for variable: " << variableName.lexeme << std::endl;
-        //     auto value = parseExpression(); // Parse the right-hand side expression
-        //     return std::make_unique<AssignStmt>(variableName.lexeme, std::move(value));
-        // } else {
-        //     throw std::runtime_error("Expected '(' for function call or '=' for assignment after identifier.");
-        //    }
     }
     else if (match({TokenType::IF})){
         return parseIfStatement();
@@ -259,8 +233,6 @@ std::unique_ptr<Stmt> Parser::parseIfStatement() {
 
 std::unique_ptr<Stmt> Parser::parseBlock() {
     std::vector<std::unique_ptr<Stmt>> blockStatements;
-    //debug statement 
-    std::cerr << "start parsing the block" << std::endl;
     consume(TokenType::INDENT, "Expected indent at the start of a new block.");
     while (!check(TokenType::DEDENT) && !isAtEnd()) {
         try {
@@ -271,7 +243,6 @@ std::unique_ptr<Stmt> Parser::parseBlock() {
             synchronize();
         }
     }
-    std::cerr << "consuming ddent" << peek().lexeme << std::endl;
     consume(TokenType::DEDENT, "Expected dedent at the end of the block.");
 
     return std::make_unique<BlockStmt>(std::move(blockStatements));
@@ -290,13 +261,6 @@ void Parser::synchronize() {
             case TokenType::IF:
             case TokenType::ELSE:
                 return;
-            // case TokenType::FOR:
-            // case TokenType::WHILE:
-            // case TokenType::DEF:
-            // case TokenType::CLASS:
-            // case TokenType::TRY:
-            //     // These keywords start new blocks or statements
-            //     return;
             default:
                 advance();  // Continue to skip tokens until reaching a significant one
                 break;
@@ -310,8 +274,6 @@ void Parser::synchronize() {
 std::unique_ptr<Stmt> Parser::parsePrintStatement() {
     consume(TokenType::LPAREN, "Expect '(' after 'print'.");
     std::vector<std::unique_ptr<Expr>> expressions;
-    //line added for debugging
-    std::cout << "Parsing print statement." << std::endl;
 
     if (!check(TokenType::RPAREN)) {
         do {
@@ -325,20 +287,12 @@ std::unique_ptr<Stmt> Parser::parsePrintStatement() {
 }
 
 std::unique_ptr<Stmt> Parser::parseFunctionDefinition() {
-    // Parse the function name, parameters
-    // Parse the function body as a block statement
-    // Return a function definition statement
-    // Token functionName = consume(TokenType::IDENTIFIER, "Expect function name.");
     auto functionName = advance().lexeme;
-    //debug statement
-    std::cout << "parsing function def for func " << functionName << std::endl;
     // Parse parameters
     consume(TokenType::LPAREN, "Expect '(' after function name.");
     std::vector<std::string> parameters;
     if (!check(TokenType::RPAREN)) { // Check if there are any parameters
         do {
-            //debug statement
-            std::cout << "pushing back param " << peek().lexeme << std::endl;
             parameters.push_back(advance().lexeme);
         } while (match({TokenType::COMMA}));
     }
@@ -346,16 +300,13 @@ std::unique_ptr<Stmt> Parser::parseFunctionDefinition() {
     consume(TokenType::COLON, "Expect ':' after parameter list.");
 
     // Handle indentation
-    // consume(TokenType::NEWLINE, "Expect new line after the colon.");
     consume(TokenType::INDENT, "Expect an indentation after function header.");
 
     std::vector<std::unique_ptr<Stmt>> body;
     while (!check(TokenType::DEDENT) && !isAtEnd()) {
         if (match({TokenType::RETURN})) {
-            // debug statement
-            std::cout << "got to return statement " << peek().lexeme<< std::endl;
             body.push_back(parseReturnStatement());
-            break;  // Optionally stop parsing after return for simplicity
+            break;  // stop parsing after return 
         } else {
             body.push_back(parseStatement());
         }
@@ -363,19 +314,14 @@ std::unique_ptr<Stmt> Parser::parseFunctionDefinition() {
 
     // Handle dedentation
     consume(TokenType::DEDENT, "Expect dedentation at the end of function block.");
-    //debug statement
-    std::cout << "consumed the ddent, exiting the func block" << previous().lexeme << std::endl;
 
     return std::make_unique<FunctionStmt>(functionName, std::move(parameters), std::make_unique<BlockStmt>(std::move(body)));
 }
 
 
 std::unique_ptr<Stmt> Parser::parseReturnStatement() {
-    //debug statement
-    std::cout << "parsing return statement "  << std::endl;
+
     auto value = parseExpression();  // Assume return is followed by an expression
-    //debug statement 
-    std::cout << "return statement evaluated to  " << value << std::endl;
     return std::make_unique<ReturnStmt>(std::move(value));
 }
 
