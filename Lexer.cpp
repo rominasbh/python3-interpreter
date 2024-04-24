@@ -99,31 +99,62 @@ Lexer::Lexer(const std::string& source) : source(source) {
     }
 }
 
+// void Lexer::checkIndentation() {
+//     if (isAtEnd()) {
+//         // addToken(TokenType::NEWLINE, "\n");
+//         return; } // Return early if at end of source to avoid processing beyond the content.
+
+//     int currentIndentation = 0;
+//     while (isspace(peek()) && peek() != '\n') {
+//         if (peek() == '\t') {
+//             // Assuming a tab is equivalent to four spaces (customize this based on your language specification)
+//             currentIndentation += 4;
+//         } else {
+//             currentIndentation += 1;
+//         }
+//         advance();
+//     }
+
+//     int currentIndent = indentStack.top();
+//     if (currentIndentation > currentIndent) {
+//         indentStack.push(currentIndentation);
+//         addToken(TokenType::INDENT,"indent");
+//     } else if (currentIndentation < currentIndent) {
+//         // Emit DEDENT tokens for each level of indentation that has ended.
+//         while (!indentStack.empty() && indentStack.top() > currentIndentation) {
+//             indentStack.pop();
+//             addToken(TokenType::DEDENT,"dedent");
+//         }
+//     }
+// }
+
 void Lexer::checkIndentation() {
     if (isAtEnd()) {
-        // addToken(TokenType::NEWLINE, "\n");
-        return; } // Return early if at end of source to avoid processing beyond the content.
+        return;
+    }
 
     int currentIndentation = 0;
     while (isspace(peek()) && peek() != '\n') {
         if (peek() == '\t') {
-            // Assuming a tab is equivalent to four spaces (customize this based on your language specification)
             currentIndentation += 4;
-        } else {
+        } else if (peek() == ' ') {
             currentIndentation += 1;
         }
         advance();
     }
 
-    int currentIndent = indentStack.top();
-    if (currentIndentation > currentIndent) {
-        indentStack.push(currentIndentation);
-        addToken(TokenType::INDENT,"    ");
-    } else if (currentIndentation < currentIndent) {
-        // Emit DEDENT tokens for each level of indentation that has ended.
-        while (!indentStack.empty() && indentStack.top() > currentIndentation) {
-            indentStack.pop();
-            addToken(TokenType::DEDENT,"");
+    // Only process indent/dedent logic if the line is not empty (ignore pure newline cases)
+    if (!isspace(peek()) && peek() != '\n' && peek() != '\r') {
+        int currentIndent = indentStack.empty() ? 0 : indentStack.top();
+
+        if (currentIndentation > currentIndent) {
+            indentStack.push(currentIndentation);
+            addToken(TokenType::INDENT, "    ");
+        } else if (currentIndentation < currentIndent) {
+            while (!indentStack.empty() && indentStack.top() > currentIndentation) {
+                indentStack.pop();
+                addToken(TokenType::DEDENT, "");
+            }
         }
     }
 }
